@@ -5,7 +5,7 @@ body {
 
 
 header ul {
-	margin-top: 50px;
+	margin-top: 3em;
 	/*width: 200px;*/
 	
 	float: left;
@@ -14,23 +14,23 @@ header ul {
 
 ul li {
 	list-style-type: none;
-	padding: 20px auto;
+	padding: 1.25em auto;
 	/*border-right: 2px dashed #DC143C;*/ /*分割左右边的特效*/
 }
 ul li:hover,
 ul li:active{
 	background-color: rgba(255, 255, 255, 0.1); /*鼠标经过时，整个li区域背景变色*/
-	margin-top: -2px;
+	margin-top: -0.125em;
 	/*border-right-color: rgba(0,0,0,0);*/ /*分割左右边的特效*/
 }
 header a {
 	display: block; 
-	margin: 10px 10px;
-	height: 30px;
+	margin: 0.625em 0.625em;
+	height: 1.875em;
 	text-align: left;
 	text-decoration: none;
 	color: #666; /*链接字体颜色*/
-	padding: 10px 0;
+	padding: 0.625em 0;
 	
 }
 header a:hover,
@@ -49,37 +49,37 @@ span a:hover {
 }
 
 .rcontent {
-	margin-top: 50px;
+	margin-top: 3em;
 	float: left;
-	border-left: 2px dashed #DC143C;/*分割左右边的特效*/
+	border-left: 0.125em dashed #DC143C;/*分割左右边的特效*/
 }
 
 table{
-	margin-left: 20px;
+	margin-left: 1.25em;
 	width: 100%;
 }
 table, th, td{
-  border: 1px solid #666;
+  border: 0.0625em solid #666;
  }
 
 /*.rcontent table tr*/ td a {
 	display: block; 
-	margin: 10px 10px;
-	height: 30px;
+	margin: 0.625em 0.625em;
+	height: 1.875em;
 	text-align: left;
 	text-decoration: none;
 	color: #ccc; /*链接字体颜色*/
-	padding: 10px 0;
+	padding: 0.625em 0;
 }
 
 /*.rcontent table tr*/ td a:hover {
 	color: red; /*鼠标经过链接变红色*/
-	margin: 8px 10px; /*鼠标经过上移特效*/
+	margin: 0.5em 0.625em; /*鼠标经过上移特效*/
 }
 table tr th,
 table tr td {
-	padding:2px;
-	height: 30px;
+	padding:0.125em;
+	height: 1.875em;
 	text-align: center;
 	text-decoration: none;
 	color: #ccc; /*链接字体颜色*/
@@ -90,12 +90,12 @@ table tr td {
 fieldset {
 	border-color: grey;
 	border-style: double;
-	border-radius: 10px;
-	margin-left: 20px;
-	margin-top: 30px;
+	border-radius: 0.625em;
+	margin-left: 1.25em;
+	margin-top: 1.875em;
 }
 .conInfo {
-	width: 400px;
+	width: 25em;
 }
 .adv {
 	width: auto;
@@ -103,7 +103,7 @@ fieldset {
 }
 fieldset legend {
 	color: #888;
-	font-size: 20px;
+	font-size: 1.25em;
 	font-family: KaiTi, Arial, sans-serif;
 }
 fieldset span {
@@ -112,7 +112,7 @@ fieldset span {
 
 .connLink { /*作者联系方式样式*/
 	color: #999;
-	font-size: 20px;
+	font-size: 1.25em;
 	font-family: KaiTi, Arial, sans-serif;
 }
 
@@ -123,30 +123,30 @@ fieldset span {
 .suisuinian,
 .superise {
 	color: #666;
-	font-size: 16px;
+	font-size: 1em;
 	font-family: KaiTi, Arial, sans-serif;
 }
 
 .superise:hover {
 	color: gold;
-	font-size: 60px;
+	font-size: 3.75em;
 	font-family: KaiTi, Arial, sans-serif;
 }
 
 /*安全*/
 body header .li4safe:hover{
 	background-color: transparent; 
-	margin-top: -2px;
+	margin-top: -0.125em;
 }
 
 body header .safe{
 	display: block; 
-	margin: 10px 10px;
-	height: 30px;
+	margin: 0.625em 0.625em;
+	height: 1.875em;
 	text-align: left;
 	text-decoration: none;
 	color: rgba(0,0, 0, 0); /*链接字体颜色*/
-	padding: 10px 0;
+	padding: 0.625em 0;
 	/*禁止文字被选中*/
 	-moz-user-select:none;/*火狐*/
 	-webkit-user-select:none;/*webkit浏览器*/
