@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>梦断弦の小窝</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="img/favicon.jpg">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <base target="_blank" />
+    <script>
+        function display(id, cla){
+            var target=document.getElementById(id);
+            var nontarget=document.getElementsByClassName(cla);
+            var i;
+            for (i=0;i<nontarget.length;i++){
+                nontarget[i].style.display="none"
+
+            }
+            target.style.display="block";
+        }
+        document.body.onselectstart = document.body.ondrag = function(){return false;}
+    </script>
+</head>
+<body ondragstart="return false;">
+    <header>
+        <ul>
+            <li><a href="https://mengduanxian.github.io/" target="_self" onclick="display('index','rcontent'">Index / 首页</a></li>
+            <li><a href="#" target="_self" onclick="display('algorithm','rcontent')">Algorithm / 算法</a></li>
+            <li><a href="#" target="_self" onclick="display('softwareEngineering','rcontent')">Software Engineering / 软件工程</a></li>
+            <li><a href="#" target="_self" onclick="display('operatingSystem','rcontent')">Operating System / 操作系统</a></li>
+            <li class="li4safe"><a href="#" target="_self" onclick="display('safety','rcontent')" class="safe">Safety / 安全</a></li>
+        </ul>
+    </header>
+
+    <!-- index -->
+    <div id="index" class="rcontent">
+    	<form>
+    		<fieldset class="conInfo">
+    			<legend>弦弦の联系方式 Xian's Contact Info</legend>
+    			<span class="connLink">QQ: 748709762</span>
+    			<span class="connLink">Q群：暂无 </span>
+    			<span class="connLink">微信：暂无 </span>
+    			<span class="connLink">微博：暂无 </span>
+    			<span class="connLink">Facebook：暂无/coming soon ... </span>
+				<span class="suisuinian">	（还有啥联系方式呀……）</span>
+    		</fieldset>
+    		<fieldset class="adv">
+    			<legend>正在玩的游戏……</legend>
+    			<span class="connLink">剑灵 → 电一 → 无日峰 </span>
+    			<span class="connLink">剑灵 → 电二 → 花样年华 </span>
+    			<span class="suisuinian">求一波小伙伴 (￣ω￣(￣ω￣〃 (￣ω￣〃)ゝ </span>
+    			<span class="superise"> （弱弱说一句：出金出号!!!） </span>
+                <span class="superise"> <a href="https://www.uu898.com/newidtrade-ID20200124123644-15943.html"></a> 电一无日峰账号链接</span>
+    			<span class="connLink">阴阳师 → 抢先体验服 </span>
+    			<span class="superise">（弱弱说一句：出式神碎片） </span>
+    			<span class="suisuinian">（我才不是因为快要吃不起饭了才打广告的 (T^T)） </span>
+				
+    		</fieldset>
+    	</form>
+
+    </div>
+
+    <!-- algorithm -->
+    <div id="algorithm" class="rcontent" style="display:none">
+        <table>
+            <tr>
+                <th>Index / 序列</th>
+                <th>Algorithm / 算法</th>
+                <th>Note / 备注</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td><a href="https://mengduanxian.github.io/algorithm/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84&%E7%AE%97%E6%B3%95%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.html">数据结构&算法基本概念</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><a href="https://mengduanxian.github.io/algorithm/%E7%BA%BF%E6%80%A7%E8%A1%A8.html">线性表</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><a href="https://mengduanxian.github.io/algorithm/AlgorithmIntroduction.html">Introduction to Algorithm</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><a href="https://mengduanxian.github.io/algorithm/FibonacciNumbers.html">Fibonacci Numbers</a></td>
+                <td>斐波那契数列</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><a href="https://mengduanxian.github.io/algorithm/BigONotation.html">Big-O Notation</a></td>
+                <td>大O表示法</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><a href="https://mengduanxian.github.io/algorithm/AdditionAlgorithm.html">Addition Algorithms</a></td>
+                <td>加法</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><a href="https://mengduanxian.github.io/algorithm/MultiplicationDivisionAlgorithms.html">Multiplication & Division Algorithms</a></td>
+                <td>乘除</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td><a href="https://mengduanxian.github.io/algorithm/ModularArithmetic.html">Modular Arithmetic</a></td>
+                <td>模运算</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td><a href="https://mengduanxian.github.io/algorithm/PrimalityTesting.html">Primality Testing</a></td>
+                <td>用费马小定理判断质数</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td><a href="https://mengduanxian.github.io/algorithm/GeneratingRandomPrimes.html">Generating Random Primes</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td><a href="https://mengduanxian.github.io/algorithm/Hailstone序列.html">Hailstone序列</a></td>
+                <td>冰雹序列</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td><a href="https://mengduanxian.github.io/algorithm/TuringMachine.html">TuringMachine</a></td>
+                <td>图灵机模型</td>
+            </tr>
+        
+        
+        
+        </table>
+    </div>
+    
+    <!-- software engineering -->
+    <div id="softwareEngineering" class="rcontent" style="display:none">
+        <table>
+            <tr>
+                <th>Index / 序列</th>
+                <th>Software Engineering methods</th>
+                <th>Note / 备注</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td><a href="https://mengduanxian.github.io/SoftwareEngineering/0.IntroductionToSoftwareEngineering.html">Introduction to Software Engineering</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><a href="https://mengduanxian.github.io/SoftwareEngineering/1.SoftwareEngineeringDiversity.html">Software Engineering Diversity</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><a href="https://mengduanxian.github.io/SoftwareEngineering/276MT.html">Midterm Review</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- operating system -->
+    <div id="operatingSystem" class="rcontent" style="display:none">
+        <table>
+            <tr>
+                <th>Index / 序列</th>
+                <th>OS / 系统原理</th>
+                <th>Note / 备注</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td><a href="https://mengduanxian.github.io/OperatingSystem/%E7%A1%AC%E4%BB%B6-%E5%AD%98%E5%82%A8%E4%BB%8B%E8%B4%A8.html">硬件-存储介质</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><a href="https://mengduanxian.github.io/OperatingSystem/OperatingSystemIntro.html">Operating System Introduction 操作系统简介</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        
+        
+    </div>
+
+    <!-- safety -->
+    <div id="safety" class="rcontent" style="display:none">
+        <li><a href="#">测试</a></li>
+    </div>
+
+</body>
+</html>
