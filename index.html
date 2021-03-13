@@ -1,68 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>墨祈の小窝</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="img/favicon.jpg">
-    <link rel="stylesheet" type="text/css"
-        media="screen and (min-width: 400px) and (max-device-width: 600px)"
-        href="smallScreen.css" />
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <base target="_blank" />
-    <script>
-        function display(id, cla){
-            var target=document.getElementById(id);
-            var nontarget=document.getElementsByClassName(cla);
-            var i;
-            for (i=0;i<nontarget.length;i++){
-                nontarget[i].style.display="none"
+---
+layout: default
+title: 墨祈の小黑屋
+page-title: 墨祈の小黑屋
+home-title: 墨祈の小黑屋
+description: 
+---
 
-            }
-            target.style.display="block";
-        }
-        document.body.onselectstart = document.body.ondrag = function(){return false;}
-    </script>
-</head>
-<body ondragstart="return false;">
-<header>
-	(￣ω￣(￣ω￣〃 (￣ω￣〃)ゝ墨祈の小窝
-</header>
-    <div>
-    <!-- index -->
-    <div id="index" class="myBlogIndex">
-    	<form>
-    		<fieldset class="">
-    			<legend>网络安全</legend>
-    			<span><a href="https://blog.csdn.net/weixin_44782422/article/details/114274955">1. IP 地址详解</a></span>
-    			<span><a href="https://blog.csdn.net/weixin_44782422/article/details/114304143">2. 基本DOS命令 & 批处理</a></span>
-    			<span><a href="https://blog.csdn.net/weixin_44782422/article/details/114396493">3. 用户与组管理</a></span>
-    			<span><a href="https://blog.csdn.net/weixin_44782422/article/details/114397063">4. 服务器远程管理</a></span>
-    			<span><a href="https://blog.csdn.net/weixin_44782422/article/details/114399498">5. 破解windows系统密码</a></span>
-    			<span></span>
-    		</fieldset>
-    		<fieldset class="">
-    			<legend>JavaScript</legend>
-    			<span><a href="https://blog.csdn.net/weixin_44782422/article/details/114298485"> 1. 基础常识</a></span>
-    			<span><a href="https://blog.csdn.net/weixin_44782422/article/details/114298498"> 2. 三种输出方法</a></span>
-    			<span><a href="https://blog.csdn.net/weixin_44782422/article/details/114298574"> 3. 嵌入HTML的三个位置</a></span>
-    			<span><a href="https://blog.csdn.net/weixin_44782422/article/details/114299012"> 4. 字面量&变量&标识符</a></span>
-    			<span><a href="https://blog.csdn.net/weixin_44782422/article/details/114370503"> 5. 基本数据类型</a></span>
-    			<span><a href="https://blog.csdn.net/weixin_44782422/article/details/114370527"> 6. 强制类型转换</a></span>
-    			<span><a href="https://blog.csdn.net/weixin_44782422/article/details/114390006"> 7. 运算符</a></span>
-    			<span><a href="https://blog.csdn.net/weixin_44782422/article/details/114390302"> 8. Unicode编码</a></span>
-    			<span><a href="https://blog.csdn.net/weixin_44782422/article/details/114572569"> 9. 条件句</a></span>
-    			<span><a href="https://blog.csdn.net/weixin_44782422/article/details/114572701">10. alert允许用户从键盘输入</a></span>
-    			<span><a href="https://blog.csdn.net/weixin_44782422/article/details/114580091">11. 打印九九乘法表</a></span>
-    			<span><a href="https://blog.csdn.net/weixin_44782422/article/details/114580186">12. 循环体起名 + break/continue</a></span>
-    			<span><a href="https://blog.csdn.net/weixin_44782422/article/details/114580847">13. 检测程序性能、计时</a></span>
-				
-    		</fieldset>
-    	</form>
-
-    </div>
-
-    
-</body>
-</html>
+{% include header.html %}
+{% include boot.html %}
+<main>
+    {% include title.html %}
+    <ul class="post-list">
+      {% include posts_paginator.html %}
+    </ul>
+</main>
+{% include pageNav.html %}
+{% include footer.html %}
