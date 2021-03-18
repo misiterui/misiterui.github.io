@@ -1,0 +1,13 @@
+h2 .dropdown {
+    color: #666666;
+    font-size: 14px;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+.menuh2 {
+    height:16px;
+}
+.collapsed {
+    height: 40px;
+    overflow: hidden;
+}
