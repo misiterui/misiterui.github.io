@@ -1,3 +1,11 @@
+header {
+    position: relative;
+}
+header span {
+    font-size: 22px;
+    position: absolute;
+    left: 60px;
+}
 h2 .dropdown {
     color: #666666;
     font-size: 14px;
