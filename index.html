@@ -1,159 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>首页-墨祈の小黑屋</title>
-  <meta charset="utf-8" />
-  <meta http-equiv="content-language" content="zh-CN" />
-  <meta name="theme-color" content="#ffffff" />
-  <meta name="supported-color-schemes" content="light dark">
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="applicable-device" content="pc,mobile">
-  <meta name="google-site-verification" content="ckhUaoa05QCmWoE1FafzTBcqYI4yBOy-UJKopXDS18M" />
-  <meta name="author" content="MoQi" />
-  <meta name="description" content=""/>
-  <meta name="keywords" content="Java,Html,JavaScript"/>
-  <link rel="icon" href="img/favicon.ico" />
-  <link rel="apple-touch-icon" href="img/logo.png" />
-  <link rel="stylesheet" href="css/common.css?t=20210313100117">
-  <link rel="stylesheet" href="css/theme-dark.css?t=20210313100117">
-  <link rel="stylesheet" href="css/page.css?t=20210313100117">
-  <link rel="stylesheet" href="css/index.css">
-  <script src="js/tools.js"></script>
-  <script>
-    window.blog = {
-      baseurl:"",
-      buildAt:"20210313100117",
-      darkTheme: false,
-      setDarkTheme: function (dark) {
-        this.darkTheme = Boolean(dark);
-        document.documentElement.className = this.darkTheme ? 'dark': '';
-        document.querySelector('meta[name=theme-color]').setAttribute('content', this.darkTheme ? '#2D2E32': '#FFFFFF');
-      }
-    }
-    if (sessionStorage.darkTheme !== undefined) {
-      blog.setDarkTheme(sessionStorage.darkTheme === 'true'); // 记忆值，单个窗口内有效
-    } else {
-      blog.setDarkTheme(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches); // 跟随系统
-    }
-    if (window.matchMedia) {
-      var media = window.matchMedia('(prefers-color-scheme: dark)');
-      media.addListener(function (ev) {
-        blog.setDarkTheme(ev.currentTarget.matches);
-        sessionStorage.removeItem('darkTheme');
-      });
-    }
-  </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="zh-CN">
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="supported-color-schemes" content="light dark">
+    <meta name="author" content="ClorisMoQi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>墨祈の小黑屋</title>
+    <link rel="icon" href="img/favicon.ico" />
 </head>
-<body ondragstart="return false;">
-<header class="header">
-  <img class="logo" src="img/logo.jpg" alt="logo"/>
-  <span>墨祈の小黑屋</span>
-  <nav class="menu">
-    <a href="/" class="hover-underline">首页</a>
-    <a href="/pages/search.html" class="hover-underline">搜索</a>
-    <a href="/pages/links.html" class="hover-underline">友链</a>
-    <a href="/pages/chat.html" class="hover-underline">留言</a>
-    <a href="/pages/about.html" class="hover-underline">关于</a>
-    </nav>
-</header>
-<div class="page page-index">
-  <div class="list-post collapsed">
-      <h2 id="frontend" class="menuh2"><span class="dropdown">&gt;</span>Frontend</h2>
-      <ul>
-        <li>
-          <span class="categories">&nbsp</span>
-          <div class="title">
-            <a href="https://hdkslax.github.io/frontend/" class="hover-underline">HTML</a>
-          </div>
-        </li>
-        <li>
-          <span class="categories">&nbsp</span>
-          <div class="title">
-            <a href="https://hdkslax.github.io/frontend/" class="hover-underline">CSS</a>
-          </div>
-        </li>
-        <li>
-          <span class="categories">&nbsp</span>
-          <div class="title">
-            <a href="https://hdkslax.github.io/frontend/" class="hover-underline">JavaScript</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-  <div class="list-post collapsed">
-    <h2 id="java" class="menuh2"><span class="dropdown">&gt;</span>Java</h2>
-    <ul>
-      <li>
-        <span class="categories">&nbsp</span>
-        <div class="title">
-          <a href="https://hdkslax.github.io/java/" class="hover-underline">Java Basics</a>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
+<body>
+    <!-- 各种语言学习进度 -->
+    <p>小破站建设中。。。</p>
 
-<footer class="footer">
-  
-</footer>
-<div id="to-top">
-  <span></span>
-  <span></span>
-</div>
-<script>
-    var menuh2 = document.querySelectorAll(".menuh2");
-    var dropdown = document.querySelectorAll(".dropdown");
-    // 定义一个变量，来保存当前打开的菜单
-    var openDiv = menuh2[0].parentNode;
-    for(var i=0; i<menuh2.length; i++){
-      menuh2[i].index = i;
-      menuh2[i].onclick = function(){
-        var parentDiv = this.parentNode;
-
-        toggleMenu(parentDiv);
-
-        if(hasClass(parentDiv, "collapsed")){
-          for(var j=0; j<menuh2.length; j++){
-            dropdown[j].innerHTML = "&gt;";
-          }
-        }else{
-          for(var k=0; k<menuh2.length; k++){
-            dropdown[k].innerHTML = "&gt;";
-          }
-          dropdown[this.index].innerHTML = "v";
-        }
-
-        // 打开菜单后，应该关闭之前打开的菜单
-        if (openDiv != parentDiv && !hasClass(openDiv, "collapsed")){
-          // 为了可以统一处理动画效果，将addClass改为toggleClass
-          // addClass(openDiv,"collapsed");
-          // 此处toggleClass不需要移除功能
-          // toggleClass(openDiv,"collapsed");
-          toggleMenu(openDiv);
-        }
-
-        // 修改打开的菜单为现在菜单
-        openDiv = this.parentNode;
-
-      };
-    }
-
-    // 切换菜单的显示状态
-    function toggleMenu(obj){
-      // 在切换类之前，获取元素高度
-      var begin = obj.offsetHeight;
-      toggleClass(obj,"collapsed");
-      // 在切换类之后，获得一个高度
-      var end = obj.offsetHeight;
-
-      // 动画效果就是将高度从begin向end过度
-      obj.style.height = begin + "px";
-
-      // 执行动画，从begin向end过度
-      move(obj, "height", end, 5, function(){
-        obj.style.height = "";
-      });
-    }
-</script>
+    <!-- 项目 -->
 </body>
 </html>
