@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
 </head>
 <body>
     <section class="header">
@@ -20,9 +19,8 @@
                 <img src="img/logo.png" alt="logo">
                 <span>墨祈の小屋</span>
             </a>
-            <div class="nav-links">
-                <!-- <i class="fa-solid fa-xmark"></i> -->
-                <i class="fa-solid fa-angle-right"></i>
+            <div class="nav-links" id="navLinks">   
+                <img src="img/right_arrow.svg" class="fa-solid fa-angle-right" onclick="hideMenu()">
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">BLOG</a></li>
@@ -31,13 +29,23 @@
                     <li><a href="">LINK</a></li>
                 </ul>
             </div>
-            <!-- <i class="fa-solid fa-bars"></i> -->
+            <img src="img/list.svg" class="fa-solid fa-list" onclick="showMenu()">
         </nav>
-
-        <div class="text-box">
-            <h1></h1>
-        </div>
-
     </section>
+
+    <!-- Language -->
+    <section class="language">
+        <h1>Language</h1>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        console.log(navLinks);
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
