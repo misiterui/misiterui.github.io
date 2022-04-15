@@ -1,73 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>墨祈の小屋</title>
-  <meta charset="utf-8" />
-  <meta http-equiv="content-language" content="zh-CN" />
-  <meta name="theme-color" content="#ffffff" />
-  <meta name="supported-color-schemes" content="light dark">
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="applicable-device" content="pc,mobile">
-  <meta name="google-site-verification" content="ckhUaoa05QCmWoE1FafzTBcqYI4yBOy-UJKopXDS18M" />
-  <meta name="author" content="MoQi" />
-  <meta name="description" content=""/>
-  <meta name="keywords" content="Java,Html,JavaScript"/>
-  <link rel="icon" href="img/favicon.ico" />
-  <link rel="apple-touch-icon" href="img/logo.png" />
-  <link rel="stylesheet" href="css/common.css?t=20210313100117">
-  <link rel="stylesheet" href="css/theme-dark.css?t=20210313100117">
-  <link rel="stylesheet" href="css/page.css?t=20210313100117">
-  <link rel="stylesheet" href="css/index.css">
-  <script src="js/tools.js"></script>
-  <script>
-    window.blog = {
-      baseurl:"",
-      buildAt:"20210313100117",
-      darkTheme: false,
-      setDarkTheme: function (dark) {
-        this.darkTheme = Boolean(dark);
-        document.documentElement.className = this.darkTheme ? 'dark': '';
-        document.querySelector('meta[name=theme-color]').setAttribute('content', this.darkTheme ? '#2D2E32': '#FFFFFF');
-      }
-    }
-    if (sessionStorage.darkTheme !== undefined) {
-      blog.setDarkTheme(sessionStorage.darkTheme === 'true'); // 记忆值，单个窗口内有效
-    } else {
-      blog.setDarkTheme(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches); // 跟随系统
-    }
-    if (window.matchMedia) {
-      var media = window.matchMedia('(prefers-color-scheme: dark)');
-      media.addListener(function (ev) {
-        blog.setDarkTheme(ev.currentTarget.matches);
-        sessionStorage.removeItem('darkTheme');
-      });
-    }
-  </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>墨祈の小屋</title>
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
 </head>
-<body ondragstart="return false;">
-<header class="header">
-  <img class="logo" src="img/logo.jpg" alt="logo"/>
-  <span>墨祈の小屋</span>
-  <nav class="menu">
-    <a href="/" class="hover-underline">首页</a>
-    <a href="/pages/blog.html" class="hover-underline">博客</a>
-    <a href="/pages/leetcode.html" class="hover-underline">刷题</a>
-    <a href="/pages/life.html" class="hover-underline">生活</a>
-    <a href="/pages/links.html" class="hover-underline">友链</a>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html">
+                <img src="img/logo.png" alt="logo">
+                <span>墨祈の小屋</span>
+            </a>
+            <div class="nav-links">
+                <i class="fa-solid fa-xmark"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CODE</a></li>
+                    <li><a href="">LIFE</a></li>
+                    <li><a href="">LINK</a></li>
+                </ul>
+            </div>
+            <!-- <i class="fa-solid fa-bars"></i> -->
+        </nav>
 
-    </nav>
-</header>
-<!-- 我的项目 -->
-<!-- <div class="project"></div>
-<div class="project"></div>
-<div class="project"></div> -->
+        <div class="text-box">
+            <h1></h1>
+        </div>
 
-<footer class="footer">
-  
-</footer>
-<div id="to-top">
-  <span></span>
-  <span></span>
-</div>
+    </section>
 </body>
 </html>
