@@ -139,13 +139,13 @@ h1 {
     color: #abb2bf;
 }
 
-h3 {
+/* h3 {
     color: #fff;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
-}
+} */
 
 .row {
     margin-top: 5%;
@@ -153,11 +153,40 @@ h3 {
     justify-content: space-between;
 }
 
-.course-col {
+.skill-col {
     flex-basis: 31%;
-    background: #fff3f3;
+    /* background: #fff3f3; */
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
+    border: dashed 1px #abb2bf;
+    transition: 0.5s;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 10px 0;
+    color: #abb2bf;
+    /* text-decoration: underline; */
+    border-bottom: solid 2px #abb2bf;
+}
+
+ul li {
+    color: #abb2bf;
+    text-align: left;
+}
+
+ul img {
+    width: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px 20px;
+    font-size: 22px;
+}
+
+.skill-col:hover {
+    box-shadow: 0 0 20px 0px rgba(255,255,255,0.2);
 }
