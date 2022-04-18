@@ -158,9 +158,15 @@
         console.log(navLinks);
         function showMenu() {
             navLinks.style.right = "0";
+			navLinks.style.visibility = "visible";
+			navLinks.style.opacity = "1";
+			navLinks.style.display = "block";
         }
         function hideMenu() {
             navLinks.style.right = "-200px";
+			navLinks.style.visibility = "hidden";
+			navLinks.style.opacity = "0";
+			navLinks.style.display = "none";
         }
     </script>
 </body>

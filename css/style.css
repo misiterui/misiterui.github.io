@@ -109,6 +109,9 @@ nav .fa-solid {
         width: 200px;
         top: 0;
         right: -200px;
+        display: none;
+        opacity: 0;
+        visibility: hidden;
         text-align: left;
         z-index: 2;
         transition: 1s;
